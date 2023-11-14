@@ -5,8 +5,11 @@ import Socials from '../components/Socials';
 function Homepage() {
     return (
         <>
+        <div className='aboutMeSocialIconsDiv'>
             <AboutMe />
             <Socials />
+        </div>
+            
         </>
         
     )

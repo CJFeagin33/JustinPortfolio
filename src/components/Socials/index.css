@@ -1,18 +1,27 @@
 .social-container {
     display: flex;
-    justify-content: space-evenly;
+    flex: 1;
+    align-items:center;
+    justify-content: space-around;
     padding: 2%;
-    background-color: rgb(0, 33, 46);
+    /* background-color: rgb(0, 33, 46); */
+
 }
 
-img{
+.icon {
+    text-align: center;
+}
+
+.icon:first-child{
+    margin: 0% 0% 50% 0%;
+}
+
+.social-container img{
     width: 80px;
     height: 80px;
-    border-radius: 50%;
-    margin-right: 5%;
-
+    border-radius: 25%;
 }
 
-img:hover{
+.social-container img:hover{
     transform: scale(1.1);
 }

@@ -39,3 +39,7 @@ ol, ul {
 }
 
 /* /////////////////////////////////// RESET OVER ////////////////////////// */
+
+.aboutMeSocialIconsDiv {
+  display: flex;
+}

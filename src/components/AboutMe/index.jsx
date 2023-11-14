@@ -5,7 +5,6 @@ function AboutMe() {
         <div className='aboutMe'>
             <div className='heading'>
                 <header>About Me:</header>
-                <img src='../../public/ProfilePicture.jpg'></img>      
             </div>
             <div>
                 <p>
