@@ -5,7 +5,7 @@ import './index.css'
 function Header () {
     return (
         <header className='header'>
-            <img src="../../public/ProfilePicture.jpg" alt="pfp" />
+            <img src="../../public/Avatar.png" alt="pfp" />
             <Navigation />
             <MobileNav />
         </header>
