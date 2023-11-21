@@ -17,12 +17,17 @@ function NavLinks({ closeHamburger, isMobile }) {
                     </NavLink>
                 </li>
                 <li>
+                    <NavLink to='/aboutMe' onClick={closeHamburgerMenu}>
+                        About Me
+                    </NavLink>
+                </li>
+                <li>
                     <NavLink to='/projects' onClick={closeHamburgerMenu}>
                         Projects
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/ContactMe' onClick={closeHamburgerMenu}>
+                    <NavLink to='/contactMe' onClick={closeHamburgerMenu}>
                         Contact Me
                     </NavLink>
                 </li>
