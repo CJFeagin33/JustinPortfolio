@@ -2,10 +2,12 @@ import './index.css';
 import LinkedInIcon from '../../assets/LinkedIn-icon.jpg';
 import GithubIcon from '../../assets/Github-Icon.png';
 import GmailIcon from '../../assets/gmail-icon.png';
+import Resume from '../../assets/Resume.png';
+import ProfilePicture from '../../assets/ProfilePicture.jpg'
 
 function HomePageModal() {
     return (
-        <div>
+        <div className='EntireHomePage'>
             <div className='HomePageModal'>
                 <div className="ContentContainer">
                     <div className='TitleContainer'>
@@ -34,6 +36,15 @@ function HomePageModal() {
                 <div className='icon'>
                     <img src={GmailIcon} alt="gmail" />
                     <p>Gmail</p>
+                </div>
+            </div>
+            <div className='ResumeModal'>
+                <div>
+                    <p>RESUME:</p>
+                </div>
+                <div>
+                    <img src={ProfilePicture} alt="PFP" />
+                    <img src={Resume} alt="Resume" />  
                 </div>
             </div>
         </div>
