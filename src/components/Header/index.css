@@ -7,12 +7,13 @@
     background-color: rgb(66, 66, 66)
 }
 
-img{
+.header img{
     position: relative;
     width: 80px;
     border-radius: 100%;
 }
 
-img:hover{
+.header img:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
