@@ -26,15 +26,21 @@ function HomePageModal() {
             </div>
             <div className='ImageLinksContainer'>
                 <div className='icon'>
-                    <img src={LinkedInIcon} alt="LinkedIn" />
+                    <a href="https://www.linkedin.com/in/justin-feagin-66691b225">
+                        <img src={LinkedInIcon} alt="LinkedIn" />
+                    </a>
                     <p>LinkedIn</p>
                 </div>
                 <div className='icon'>
-                    <img src={GithubIcon} alt="github" />
+                    <a href="https://github.com/CJFeagin33">
+                        <img src={GithubIcon} alt="github" />
+                    </a>
                     <p>GitHub</p>
                 </div>
                 <div className='icon'>
-                    <img src={GmailIcon} alt="gmail" />
+                    <a href="mailto:cjfeagin33@gmail.com">
+                        <img src={GmailIcon} alt="gmail" />
+                    </a>
                     <p>Gmail</p>
                 </div>
             </div>
@@ -42,13 +48,14 @@ function HomePageModal() {
                 <div>
                     <p>RESUME:</p>
                 </div>
-                <div>
-                    <img src={ProfilePicture} alt="PFP" />
-                    <img src={Resume} alt="Resume" />  
+                <div className='ResumeModalImages'>
+                    <a href="https://docs.google.com/document/d/1MWY8YWM-yBehRCnJ1MoibAFFUNz25qY4lIVkuUHAKyU/edit">
+                        <img src={ProfilePicture} alt="PFP" />
+                        <img src={Resume} alt="Resume" />
+                    </a>
                 </div>
             </div>
         </div>
-
     )
 }
 
