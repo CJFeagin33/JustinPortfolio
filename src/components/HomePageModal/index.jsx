@@ -49,7 +49,7 @@ function HomePageModal() {
                     <p>RESUME:</p>
                 </div>
                 <div className='ResumeModalImages'>
-                    <a href="https://docs.google.com/document/d/1MWY8YWM-yBehRCnJ1MoibAFFUNz25qY4lIVkuUHAKyU/edit">
+                    <a href="https://docs.google.com/document/d/e/2PACX-1vTBBlBuVWx6qT2lcazi-du8mAkPEVqMS3WVnqqzyW2808gcwf8QiD7RHAc6ci_o7GBEn43HHB7x9ICc/pub">
                         <img src={ProfilePicture} alt="PFP" />
                         <img src={Resume} alt="Resume" />
                     </a>

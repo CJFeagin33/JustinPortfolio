@@ -4,6 +4,11 @@
     align-items: center;
 }
 
+.contactMe h1 {
+    font-size: 6em;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
 .title {
     margin: 20px;
     text-align: center;
