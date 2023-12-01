@@ -1,7 +1,11 @@
+import ContactMe from "../components/ContactMe";
+
 function ContactPage() {
     return (
-        <p>Goodbye World
-        </p>
+        <>
+            <ContactMe />
+        </>
+        
     )
 }
 
