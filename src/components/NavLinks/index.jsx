@@ -27,7 +27,7 @@ function NavLinks({ closeHamburger, isMobile }) {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/contactPage' onClick={closeHamburgerMenu}>
+                    <NavLink to='/contactMe' onClick={closeHamburgerMenu}>
                         Contact Me
                     </NavLink>
                 </li>

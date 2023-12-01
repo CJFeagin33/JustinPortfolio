@@ -1,18 +1,11 @@
-import '../components/AboutMe'
-import AboutMe from '../components/AboutMe';
-import Socials from '../components/Socials';
+import HomePageModal from "../components/HomePageModal";
 
-function Homepage() {
+function HomePage() {
     return (
         <>
-        <div className='aboutMeSocialIconsDiv'>
-            <AboutMe />
-            <Socials />
-        </div>
-            
+            <HomePageModal />
         </>
-        
     )
 }
 
-export default Homepage;
+export default HomePage;

@@ -1,0 +1,37 @@
+.HomePageModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: 100px auto 0;
+}
+
+.h1Container,
+.pContainer {
+    background-color: rgb(66, 66, 66);
+    width: 100%; /* To take up the full width of HomePageModal */
+}
+
+.HomePageModal h1 {
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0; /* Remove any default margins */
+    padding: 20px; /* Padding for spacing within each container */
+}
+
+.HomePageModal p {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+.pContainer {
+    margin-top: 20px; /* Additional space between h1 and p */
+}
