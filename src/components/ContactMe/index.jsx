@@ -1,79 +1,60 @@
 import './index.css'
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser'
 
 function ContactMe() {
-    const [title, setTitle] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-    const [titleError, setTitleError] = useState(false);
-    const [emailError, setEmailError] = useState(false);
-    const [messageError, setMessageError] = useState(false);
+    const form = useRef();
+    const [messageSent, setMessageSent] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('')
 
-    function handleTitleChange(e) {
-        setTitle(e.target.value);
-        setTitleError(false); // Reset error state on input change
-    }
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    function handleEmailChange(e) {
-        setEmail(e.target.value);
-        setEmailError(false); // Reset error state on input change
-    }
+        const formData = new FormData(form.current);
+        let valid = true;
 
-    function handleMessageChange(e) {
-        setMessage(e.target.value);
-        setMessageError(false); // Reset error state on input change
-    }
+        formData.forEach((value) => {
+            if (!value) {
+                valid = false;
+            }
+        });
 
-    function handleSubmit(e) {
-        e.preventDefault(); // Prevent the default form submission behavior
-
-        // Validation checks
-        if (!title.trim()) {
-            setTitleError(true);
-        }
-        if (!email.trim()) {
-            setEmailError(true);
-        }
-        if (!message.trim()) {
-            setMessageError(true);
+        if (!valid) {
+            setErrorMessage('Please fill out all fields.');
+            setTimeout(() => setErrorMessage(''), 3000);
+            return;
         }
 
-        // Handle form submission logic (e.g., send an email, store the message, etc.)
-        // You can add your logic here once the form is valid
-    }
+        emailjs.sendForm('service_b0tnekp', 'template_nvxt71k', form.current, 'CijtCz2tBVZHnD2PE')
+            .then((result) => {
+                console.log(result.text);
+                console.log('Message Sent!');
+                setMessageSent(true);
+                form.current.reset();
+                setTimeout(() => setMessageSent(false), 3000);
+            },
+            (error) => {
+                console.log(error.text);
+            });
+    };
 
     return (
-        <form className="contactMe" onSubmit={handleSubmit}>
-            <h1>Contact Me:</h1>
-            <input
-                className="title"
-                type="text"
-                placeholder='Enter Subject Line here!'
-                value={title}
-                onChange={handleTitleChange}
-            />
-            {titleError && <p className="titleErr">Title cannot be empty!</p>}
-
-            <input
-                className="email"
-                type="email"
-                placeholder='Enter your Email Address here!'
-                value={email}
-                onChange={handleEmailChange}
-            />
-            {emailError && <p className="emailErr">Please enter a valid email!</p>}
-
-            <textarea
-                className="textBody"
-                placeholder='Write your message here!'
-                value={message}
-                onChange={handleMessageChange}
-            ></textarea>
-            {messageError && <p className="messageErr">Message cannot be empty!</p>}
-
-            <button type="submit" className="sendBtn">Send</button>
-        </form>
-    )
+        <div className='contact-container'>
+            <h1>Contact Me</h1>
+            <p>Want to reach out to me? fill out this form to direct message me via email!</p>
+            {errorMessage && <p className='error-message'>{errorMessage}</p>}
+            <form ref={form} onSubmit={sendEmail} className='contact-form'>
+                <label className='form-label'>Name</label>
+                <input type="text" name="user_name" className='form-input' />
+                <label className='form-label'>Email</label>
+                <input type="email" name="user_email" className='form-input' />
+                <label className='form-label'>Message</label>
+                <textarea name="message" className='form-textarea' />
+                <input type="submit" value="Send" className='form-submit' />
+            </form>
+            {messageSent && <p className='message-sent'>Message Sent!</p>}
+        </div>
+    );
 }
 
 export default ContactMe;
