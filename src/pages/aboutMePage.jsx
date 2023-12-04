@@ -1,13 +1,10 @@
-import '../components/AboutMe'
 import AboutMe from '../components/AboutMe';
-import Socials from '../components/Socials';
 
 function AboutMePage() {
     return (
         <>
-        <div className='aboutMeSocialIconsDiv'>
+        <div>
             <AboutMe />
-            <Socials />
         </div>
             
         </>
