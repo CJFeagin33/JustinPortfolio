@@ -39,6 +39,7 @@
 .completedProjects img{
     width: 700px;
     height: 500px;
+    border-radius: 10px;
 }
 
 .completedProjects img:hover {
