@@ -96,4 +96,12 @@
     .contact-container h1 {
         font-size: 40px;
     }
+
+    .contact-container p{
+        font-size: 20px;
+    }
+
+    .contact-form {
+        width: 95%;
+    }
 }
