@@ -23,13 +23,17 @@
     letter-spacing: 5px;
 }
 
+.Projects h3 {
+    font-size: 1.5em;
+    margin: 20px;
+}
+
 .Projects p {
     font-size: 1.5em;
     font-weight: bold;
     width: 80%;
     line-height: 50px;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .completedProjects {
@@ -51,4 +55,161 @@
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 1.5em;
+}
+
+@media (max-width: 803px) {
+    .Projects h1{
+        margin-top: 10px;
+        font-size: 90px;
+    }
+
+    .Projects p{
+        font-size: 20px;
+
+        margin: 0;
+    }
+
+    .completedProjects {
+        margin-top: 0;
+    }
+
+    .completedProjects h2{
+        font-size: 24px;
+    }
+
+    .completedProjects img{
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .Projects h1{
+        margin-top: 10px;
+        font-size: 80px;
+    }
+
+    .Projects p{
+        font-size: 16px;
+        line-height: 25px;
+        margin: 0;
+    }
+
+    .completedProjects {
+        margin-top: 0;
+    }
+
+    .completedProjects h2{
+        font-size: 20px;
+    }
+
+    .completedProjects img{
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 580px) {
+    .Projects h1{
+        margin-top: 10px;
+        font-size: 70px;
+    }
+
+    .Projects p{
+        font-size: 16px;
+        line-height: 25px;
+        margin: 0;
+    }
+
+    .completedProjects {
+        margin-top: 0;
+    }
+
+    .completedProjects h2{
+        font-size: 20px;
+    }
+
+    .completedProjects img{
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 474px) {
+    .Projects h1{
+        margin-top: 10px;
+        font-size: 70px;
+    }
+
+    .Projects p{
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .completedProjects {
+        margin-top: 0;
+    }
+
+    .completedProjects h2{
+        font-size: 18px;
+    }
+
+    .completedProjects img{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 440px) {
+    .Projects h1{
+        margin-top: 10px;
+        font-size: 60px;
+    }
+
+    .Projects p{
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .completedProjects {
+        margin-top: 0;
+    }
+
+    .completedProjects h2{
+        font-size: 18px;
+    }
+
+    .completedProjects img{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 374px) {
+    .Projects h1{
+        margin-top: 10px;
+        font-size: 40px;
+    }
+
+    .Projects p{
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .Projects h3{
+        font-size: 20px;
+    }
+
+    .completedProjects {
+        margin-top: 0;
+    }
+
+    .completedProjects h2{
+        font-size: 18px;
+    }
+
+    .completedProjects img{
+        width: 250px;
+        height: 150px;
+    }
 }

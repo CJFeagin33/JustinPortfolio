@@ -40,7 +40,7 @@ function ProjectsModal() {
                         <img src={TournamentMaker} alt="TournamentMaker" />
                     </a>
                 </div>
-                <p>More projects coming soon!</p>
+                <h3>More projects coming soon!</h3>
             </div>
        </div>
     );
