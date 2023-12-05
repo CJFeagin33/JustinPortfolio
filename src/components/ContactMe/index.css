@@ -79,3 +79,21 @@
     font-weight: bold;
     font-style: italic;
 }
+
+@media (max-width: 510px) {
+    .contact-container h1 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 428px) {
+    .contact-container h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 330px) {
+    .contact-container h1 {
+        font-size: 40px;
+    }
+}
