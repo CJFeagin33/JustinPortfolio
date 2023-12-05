@@ -32,5 +32,43 @@
     font-size: 1.5em;
     font-weight: bold;
     width: 50%;
-    line-height: 50px;
+    line-height: 40px;
+}
+
+@media (max-width: 1300px) {
+    .aboutMe h1{
+        font-size: 90px;
+        margin: 0;
+    }
+
+    .aboutMe p{
+        font-size: 20px;
+        line-height: normal;
+    }
+}
+
+@media (max-width: 650px) {
+    .aboutMe h1{
+        font-size: 90px;
+        margin: 0;
+    }
+
+    .aboutMe p{
+        font-size: 13px;
+        line-height: normal;
+    }
+}
+
+@media (max-width: 383px) {
+
+    .aboutMe h1{
+        font-size: 60px;
+        margin: 0;
+    }
+
+    .aboutMe p{
+        font-size: 13px;
+        line-height: normal;
+        
+    }
 }

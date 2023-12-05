@@ -3,7 +3,7 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 730px) {
     .navigation {
         display: none;
 
