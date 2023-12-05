@@ -115,9 +115,9 @@
     font-weight: bold;
 }
 
-.ResumeModal p{
+.ResumeModal p {
     font-size: 6em;
-
+    margin-left: 20px;
 }
 
 .ResumeModal img {
@@ -137,4 +137,104 @@
 .ResumeModalImages:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+    .HomePageModal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ContentContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .ImageLinksContainer {
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        max-width: 600px;
+    }
+
+    .icon {
+        margin-bottom: 20px;
+    }
+
+    .ResumeModal {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .ResumeModal p{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .ResumeModal img:first-child{
+        margin: 0;
+    }
+
+    .ResumeModalImages {
+        margin: 0;
+    }
+
+    .ResumeModal img {
+        width: 250px;
+        height: 300px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 541px) {
+
+    .ContentContainer {
+        margin: auto;
+    }
+
+    .HomePageModal h1{
+        font-size: 90px;
+    }
+
+    .ParagraphContainer{
+        font-size: 15px;
+    }
+
+    .ResumeModal p{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 383px) {
+
+    .ContentContainer {
+        margin: auto;
+    }
+
+    .HomePageModal h1{
+        font-size: 60px;
+    }
+
+    .ParagraphContainer{
+        font-size: 10px;
+    }
+
+    .ImageLinksContainer img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .ImageLinksContainer p{
+        font-size: 15px;
+    }
+
+    .icon {
+        margin-bottom: 0;
+    }
+    .ResumeModal p{
+        font-size: 40px;
+    }
 }
